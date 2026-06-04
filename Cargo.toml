@@ -1,0 +1,8 @@
+[package]
+name = "BMP_editor"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+log = "0.4.30"
