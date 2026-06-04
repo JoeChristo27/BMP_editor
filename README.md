@@ -8,7 +8,7 @@ A crate to create .bmp files in rust
 - Will add more in the future!
 
 ## Usage
-'''rust
+```rust
 // Create a BMP struct containing the file 
 // Here the image_data is a Vec<u8>
 // 0 represents black and 1 represents white eg: 0b00001111, 0b00000000
@@ -19,7 +19,7 @@ let file = fs::File::create(format!("{}.bmp", file_name)).unwrap();
 
 // Write the bmp data into the file
 bmp_file.write_data(file).unwrap();
-'''
+```
 
 ## Limitations
 
