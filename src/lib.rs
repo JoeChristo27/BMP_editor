@@ -14,7 +14,7 @@ pub struct BMP {
 impl BMP {
     /// Used to create a new grayscale image.
     /// Image data provided must be padded
-    pub fn new_greyscale_image(image_data: Vec<u8>, width: u32, height: u32) -> BMP {
+    pub fn new_greyscale_image(width: u32, height: u32, image_data: Vec<u8>) -> BMP {
 
         let info_header = DIBHeader {
             size: 40,

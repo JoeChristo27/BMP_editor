@@ -52,7 +52,7 @@ fn main() {
     // Creating a grayscale image
 
     let image_data_grayscale: Vec<u8> = create_image_data_grayscale();
-    let bmp_file_grayscale = BMP::new_greyscale_image(image_data_grayscale, 640, 640);
+    let bmp_file_grayscale = BMP::new_greyscale_image(640, 640, image_data_grayscale);
 
     let file_grayscale = fs::File::create("grayscale.bmp").unwrap();
     bmp_file_grayscale.write_data(file_grayscale).unwrap();
