@@ -1,6 +1,6 @@
 # BMP_editor
 
-[![Repo Badge]][Repo]  [![License Badge]][License]  ![Deps Badge]
+[![Repo Badge]][Repo]  [![License Badge]][License]  [![Deps Badge]][Deps]
 
 A crate to create .bmp files in rust
 - [Features](#features)
@@ -43,7 +43,7 @@ Full example program in the [main.rs](src/main.rs)
 - Cannot create color image with table
 - The image data provided must be padded (number of bits must be multiple of 32)
 
-
+[Deps]: https://github.com/JoeChristo27/BMP_editor/blob/main/Cargo.toml
 [Repo]: https://github.com/JoeChristo27/BMP_editor
 [License]: https://github.com/JoeChristo27/BMP_editor/blob/main/LICENSE
 [Repo Badge]:  https://img.shields.io/badge/github-BMP_editor-blue?logo=github
