@@ -1,5 +1,11 @@
 # BMP_editor
-A crate to create .bmp files in rust 
+
+[![Repo Badge]][Repo]  [![License Badge]][License]  ![Deps Badge]
+
+A crate to create .bmp files in rust
+- [Features](#features)
+- [Usage](#usage)
+- [Limitations](#limitations) 
 
 ## Features
 
@@ -30,7 +36,16 @@ let file = fs::File::create(format!("{}.bmp", file_name)).unwrap();
 // Write the bmp data into the file
 bmp_file_grayscale.write_data(file).unwrap();
 ```
+Full example program in the [main.rs](src/main.rs)
+
 ## Limitations
 
 - Cannot create color image with table
 - The image data provided must be padded (number of bits must be multiple of 32)
+
+
+[Repo]: https://github.com/JoeChristo27/BMP_editor
+[License]: https://github.com/JoeChristo27/BMP_editor/blob/main/LICENSE
+[Repo Badge]:  https://img.shields.io/badge/github-BMP_editor-blue?logo=github
+[License Badge]: https://img.shields.io/badge/Licencse-MIT-red
+[Deps Badge]: https://img.shields.io/badge/Dependencies-None-green

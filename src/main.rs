@@ -54,7 +54,7 @@ fn main() {
     let image_data_grayscale: Vec<u8> = create_image_data_grayscale();
     let bmp_file_grayscale = BMP::new_greyscale_image(640, 640, image_data_grayscale);
 
-    let file_grayscale = fs::File::create("grayscale.bmp").unwrap();
+    let file_grayscale = fs::File::create("examples/grayscale.bmp").unwrap();
     bmp_file_grayscale.write_data(file_grayscale).unwrap();
 
     // Creating a color image
@@ -64,7 +64,7 @@ fn main() {
     // Extra zero to make it 32 bit
     let image_data_color: Vec<u8> = create_image_data_color();
     let bmp_file_color = BMP::new_color_image(200, 200, 24, image_data_color).unwrap();
-    let file_color = fs::File::create("color.bmp").unwrap();
+    let file_color = fs::File::create("examples/color.bmp").unwrap();
     bmp_file_color.write_data(file_color).unwrap();
 }
 
