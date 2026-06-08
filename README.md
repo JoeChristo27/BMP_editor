@@ -9,9 +9,10 @@ A crate to create .bmp files in rust
 
 ## Features
 
-- Create a grayscale image in .bmp format
-- Create a color image in .bmp format
-- A bmp file of any width and height can be created 
+- Helper function to create a grayscale image in .bmp format
+- Helper function to create a color image in .bmp format
+- A bmp file of any width and height can be created
+- Can create any type of image manually using the struct! 
 - Will add more in the future!
 
 ## Usage
@@ -38,9 +39,14 @@ bmp_file_grayscale.write_data(file).unwrap();
 ```
 Full example program in the [main.rs](src/main.rs)
 
+### The struct fields
+Refer it to create bmp files manually.
+It can be found at [stuct_fields.md](struct_fields.md)
+
+
 ## Limitations
 
-- Cannot create color image with table
+- Can create color image with table only manually
 - The image data provided must be padded (number of bits must be multiple of 32)
 
 

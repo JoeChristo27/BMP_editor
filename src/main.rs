@@ -38,10 +38,10 @@ fn create_image_data_color() -> Vec<u8> {
         for j in 0..=200 {
             image_data.push(i);
             image_data.push(j);
-            image_data.push(255);
+            image_data.push(j);
+            
         }
     }
-
 
     image_data
 }
