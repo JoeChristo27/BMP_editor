@@ -39,7 +39,7 @@ bmp_file_grayscale.write_data(file).unwrap();
 ```
 Full example program in the [main.rs](src/main.rs)
 
-### The struct fields
+## The struct fields
 Refer it to create bmp files manually.
 It can be found at [stuct_fields.md](struct_fields.md)
 
